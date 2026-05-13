@@ -1,0 +1,11 @@
+1. Guide me through building a Playwright scraper for ekantipur.com to extract entertainment news and cartoon of the day
+
+2. The entertainment page has div.category cards with title in h2 a, author in .author-name p a, image in .category-image img, category in .category-name p a — write a scraper skeleton
+
+3. First article is duplicated in output, fix it using a seen_titles set to skip duplicates
+
+4. Some image_urls are null because of lazy loading — fix by scrolling the page before extracting
+
+5. Cartoon section shows WARNING: Could not find active cartoon slide — the cartoon page uses div.cartoon-wrapper not swiper-slide-active
+
+6. Cartoon title has trailing " -" from empty author field — strip trailing dash and whitespace from title
